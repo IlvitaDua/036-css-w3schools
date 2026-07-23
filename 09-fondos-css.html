@@ -1,0 +1,89 @@
+<!--background-color especifica el color de fondo de un elemento-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  background-color: green;
+}
+
+div {
+  background-color: rgb(3, 39, 52);
+}
+
+p {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>Hello World!</h1>
+
+<p>This page has a light blue background color!</p>
+
+
+<!--opacidad/Trasnparencia-->
+div {
+  background-color: green;
+  opacity: 0.3;
+}
+
+<!--imagen de fondo-->
+<!--background-imagepropiedad especifica una imagen que se utilizará como fondo-->
+body {
+  background-image: url("paper.gif");
+}
+
+<!--La imagen de fondo también se puede configurar para elementos 
+específicos, como el elemento <p>-->
+p {
+  background-image: url("paper.gif");
+}
+
+<!--repeticion de imaden de fondo background-repeat-->
+body {
+  background-image: url("gradient_bg.png");
+}
+
+<!--Repetición de fondo CSS horizontal-->
+body {
+  background-image: url("gradient_bg.png");
+  background-repeat: repeat-x;
+}
+
+<!--posicion de fondo-->
+<!--Esta background-positionpropiedad se utiliza para establecer 
+la posición inicial de la imagen de fondo.
+Por defecto, la imagen de fondo se coloca en la esquina superior izquierda de un elemento-->
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+<!--archivo adjunto-->
+<!--background-attachment especifica si la imagen de fondo debe 
+desplazarse o permanecer fija (no se desplazará con el resto de la página)-->
+<style>
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: fixed;
+}
+</style>
+
+<!--abreviatura de fondo-->
+
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+</body>
+</html>
+
