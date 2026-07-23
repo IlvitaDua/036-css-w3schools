@@ -1,0 +1,106 @@
+<!--errores y comas faltantes-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.bad {
+  color: red
+  background-color/*:*/ yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>Error: Missing Semicolon</h2>
+
+<p class="bad">This is a paragraph.</p>
+
+</body>
+</html>
+
+<!--nombres de propiedades no validos-->
+<!--El navegador simplemente ignorará el nombre de una propiedad que no existe.-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.bad {
+  color /*colr*/: blue; /*por ejemplo aca colr esta mal*/
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Error: Invalid Property Name</h2>
+
+<p class="bad">This is a paragraph.</p>
+
+</body>
+</html>
+
+<!--valores no validos-->
+<!--los valores no válidos, también serán ignorados.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.bad {
+  width: -100px;
+  color: green;
+}
+</style>
+</head>
+<body>
+
+<h2>Error: Invalid Values</h2>
+
+<p class="bad">This is a paragraph.</p>
+
+</body>
+</html>
+
+<!--soportes abiertos-->
+<!--Si olvidas cerrar una llave }, es posible que se ignore toda la regla-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.bad {
+  padding: 20px;
+  margin: 10px;
+} /*aca si se quita la llave dara un error*/
+</style>
+</head>
+<body>
+
+<h2>Error: Unclosed Braces</h2>
+
+<p class="bad">This is a paragraph.</p>
+
+</body>
+</html>
+
+<!--Colones o aparatos ortopédicos adicionales-->
+<!--Los errores tipográficos, como dos puntos adicionales o llaves mal colocadas, 
+pueden provocar que se infrinjan las regla-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.bad {
+  color:/*:*/ blue;
+}
+</style>
+</head>
+<body>
+
+<h2>Error: Extra colons or braces</h2>
+
+<p class="bad">This is a paragraph.</p>
+
+</body>
+</html>
