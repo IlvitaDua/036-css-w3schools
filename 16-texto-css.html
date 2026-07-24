@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50; /*color de texto*/
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: #008CBA; /*color d etexto*/
+}
+</style>
+</head>
+<body>
+
+<div>
+  <h1>text formatting</h1>
+  <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.
+  The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored
+  <a target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.</p>
+</div>
+
+</body>
+</html>
+<!--Color del texto y color de fondo-->
+body {
+  background-color: lightgrey;
+  color: blue;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+}
+
+div {
+  background-color: blue;
+  color: white;
+}
+
+<!--alineacion y direccion de texto-->
+h1 {
+  text-align: center; centra texto
+}
+
+h2 {
+  text-align: left; alinea a izquierda
+}
+
+h3 {
+  text-align: right; alinea a la derecha
+}
+
+div {
+  text-align: justify; mismo ancho de margenes
+}
+
+<!--alinear texto al final-->
+p.a {
+  text-align-last: right; alineada a la derecha
+}
+
+p.b {
+  text-align-last: center; linea centrada
+}
+
+p.c {
+  text-align-last: justify; justificada igual que el resto de las líneas
+}
+
+<!--decoracion de texto-->
+h1 {
+  text-decoration-line: overline; se muestra sobre el texto
+}
+
+h2 {
+  text-decoration-line: line-through; muestra a través del texto
+}
+
+h3 {
+  text-decoration-line: underline; se muestra debajo del texto
+}
+
+p {
+  text-decoration-line: overline underline; se muestra sobre y debajo del texto
+}
+
+<!--color para la linea-->
+h1 {
+  text-decoration-line: overline;
+  text-decoration-color: red;
+}
+
+h2 {
+  text-decoration-line: line-through;
+  text-decoration-color: blue;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-color: green;
+}
+
+p {
+  text-decoration-line: overline underline;
+  text-decoration-color: purple;
+}
+
+<!--estilos de decoracion-->
+<!-- línea decorativa. text-decoration-style-->
+h1 {
+  text-decoration-line: underline; linea debajo del texto
+  text-decoration-style: solid; linea unica
+}
+
+h2 {
+  text-decoration-line: underline;
+  text-decoration-style: double; liena doble
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-style: dotted; linea punteada
+}
+
+p.ex1 {
+  text-decoration-line: underline;
+  text-decoration-style: dashed; linea discontinua
+}
+
+p.ex2 {
+  text-decoration-line: underline;
+  text-decoration-style: wavy; linea ondulada
+}
+
+<!--grosor de la linea-->
+<!--para establecer el grosor de la línea decorativa. text-decoration-thickness-->
+h1 {
+  text-decoration-line: underline;
+  text-decoration-thickness: auto;
+}
+
+h2 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 25%;
+}
+
+<!--taquigrafía  text-decoration-->
+h1 {
+  text-decoration: underline;
+}
+
+h2 {
+  text-decoration: underline red;
+}
+
+h3 {
+  text-decoration: underline red double;
+}
+
+p {
+  text-decoration: underline red double 5px;
+}
+
+<!-- todos lo enlaces en html estan subrayados por defecto
+ text-decoration: none-->
+
+<!--Transformacion de texto-->
+<!-- se utiliza para controlar el uso de mayúsculas en el texto de un elemento. text-transform-->
+
+p.uppercase {
+  text-transform: uppercase; Transforma todos los caracteres a mayúsculas
+}
+
+p.lowercase {
+  text-transform: lowercase; Transforma todos los caracteres a minúsculas
+}
+
+p.capitalize {
+  text-transform: capitalize; Transforma el primer carácter de cada palabra a mayúscula.
+}
+
+<!--espaciado de texto-->
+<!--sangria de texto-->
+<!--text-indentse utiliza para especificar la sangría de la primera 
+línea en un bloque de texto.-->
+p {
+  text-indent: 50px;
+}
+
+<!--espaciado entre letras letter-spacing-->
+h2 {
+  letter-spacing: 5px;
+}
+
+h3 {
+  letter-spacing: -2px;
+}
+
+<!--altura de lineas line-heightse utiliza para especificar el espacio entre líneas-->
+p.small {
+  line-height: 0.8;
+}
+
+p.big {
+  line-height: 1.8;
+}
+
+<!--espaciado de palabra word-spacing-->
+p.one {
+  word-spacing: 10px;
+}
+
+p.two {
+  word-spacing: -2px;
+}
+
+<!--espaciado en blanco white-space-->
+p {
+  white-space: nowrap;
+}
+
+<!--sombra de texto-->
+<!--text-shadowpropiedad añade sombra al texto-->
+<!--Sombra horizontal y vertical-->
+h1 {
+  text-shadow: 2px 2px;
+}
+
+<!--con color-->
+h1 {
+  text-shadow: 2px 2px red;
+}
+
+<!--efecto de desenfoque-->
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+
+<!--Sombra de texto sobre texto blanco-->
+h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+<!--Sombra de texto con brillo neón rojo-->
+h1 {
+  text-shadow: 0 0 3px #ff0000;
+}
+
+<!--Múltiples sombras-->
+<!--text-shadow también admite múltiples sombras para un elemento. 
+Defina cada sombra en una lista separada por comas.-->
+
+h1 {
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+
+<!--Texto sombreado con brillo neón negro, azul y rojo-->
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px red;
+}
