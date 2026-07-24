@@ -1,0 +1,147 @@
+<!--propiedad outline-style-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+outline-color:green;
+padding: 5px;
+}
+
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
+</style>
+</head>
+<body>
+
+<h2>The outline-style Property</h2>
+
+<p class="dotted">A dotted outline</p>
+<p class="dashed">A dashed outline</p>
+<p class="solid">A solid outline</p>
+<p class="double">A double outline</p>
+<p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+<p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+<p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+<p class="outset">An outset outline. The effect depends on the outline-color value.</p>
+
+<!--Ancho del contorno-->
+
+p {
+  padding: 5px;
+  outline-style: solid;
+  outline-color: green;
+}
+
+p.ex1 {
+  outline-width: thin;
+}
+
+p.ex2 {
+  outline-width: medium;
+}
+
+p.ex3 {
+  outline-width: thick;
+}
+
+p.ex4 {
+  outline-width: 8px;
+}
+
+<!--Color de contorno-->
+p {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+p.ex1 {
+  outline-style: solid;
+  outline-color: red;
+}
+
+p.ex2 {
+  outline-style: dotted;
+  outline-color: blue;
+}
+
+p.ex3 {
+  outline-style: outset;
+  outline-color: green;
+}
+
+p.ex4 {
+  outline-style: solid;
+  outline-color: invert;
+}
+
+<!--valores hex-->
+p.ex1 {
+  outline-style: solid;
+  outline-color: #ff0000; /* red */
+}
+
+<!--valores RGB-->
+p.ex1 {
+  outline-style: solid;
+  outline-color: rgb(255, 0, 0); /* red */
+}
+
+<!--valores HLS-->
+p.ex1 {
+  outline-style: solid;
+  outline-color: hsl(0, 100%, 50%); /* red */
+}
+
+<!--Esquema CSS abreviado-->
+p.ex1 {outline: dashed;}
+p.ex2 {outline: dotted red;}
+p.ex3 {outline: 7px solid yellow;}
+p.ex4 {outline: thick ridge pink;}
+
+<!--Contorno CSS con esquinas redondeadas-->
+p.ex1 {
+  outline: dashed;
+  border-radius: 8px;
+}
+
+p.ex2 {
+  outline: dotted red;
+  border-radius: 5px;
+}
+
+p.ex3 {
+  outline: 7px solid yellow;
+  border-radius: 5px;
+}
+
+p.ex4 {
+  outline: thick ridge pink;
+  border-radius: 8px;
+}
+
+p.ex5 {
+  outline: thick solid green;
+  border-radius: 10px;
+}
+
+<!--Desplazamiento de contorno-->
+<!--outline-offsetpropiedad añade un espacio entre el contorno y el borde de un elemento-->
+p {
+  margin: 30px;
+  padding: 5px;
+  border: 1px solid black;
+  outline: 3px solid red;
+  outline-offset: 15px;
+}
+
+</body>
+</html>
+
